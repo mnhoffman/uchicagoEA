@@ -602,7 +602,7 @@ body.ed {
 .ed .theme-bright .rich a:hover, .ed .theme-dark .rich a:hover, .ed .theme-dark-bold .rich a:hover, .ed .theme-black .rich a:hover { color: inherit; opacity: 0.8; }
 
 .ed .btn { font-family: var(--sans); font-weight: 600; }
-.ed .eyebrow, .ed .ed-eyebrow { font-family: var(--sans); }
+.ed .eyebrow, .ed .ed-eyebrow { font-family: var(--sans); font-size: 0.88rem; font-weight: 700; letter-spacing: 0.09em; }
 .ed .sidebar__nav a { font-family: var(--sans); font-weight: 500; }
 .ed .sqsrte-text-color--white { color: inherit; }
 .ed .card__title { font-family: var(--serif); font-weight: 500; font-size: 1.35rem; }
@@ -755,9 +755,9 @@ body.ed {
 }
 
 .ed-eyebrow {
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.24em;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--accent);
   margin: 0 0 1.4rem;
