@@ -8,50 +8,56 @@
 <link rel="icon" href="../assets/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Inter+Tight:wght@400;500&family=Roboto+Slab:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
-<header class="site-header">
-  <div class="site-header__inner">
-    <a class="site-header__logo" href="../" aria-label="UChicago Effective Altruism home">
-      <img src="../assets/images/logo.png" alt="University of Chicago Effective Altruism">
-    </a>
-    <button class="site-nav__burger" aria-label="Menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="site-nav"><a href="../">HOME</a><div class="site-nav__folder"><button type="button" aria-haspopup="true">ABOUT US</button><div class="site-nav__dropdown"><a href="../about-us/">UChicago EA</a><a href="../about-ea/">Effective Altruism</a></div></div><div class="site-nav__folder active"><button type="button" aria-haspopup="true">PROGRAMS</button><div class="site-nav__dropdown"><a href="../intro-fellowship/">Intro Fellowship</a><a href="../impact-research-groups/">Impact Research Groups</a><a href="../longtermist-reading-group/">Longtermist Reading Group</a></div></div><a href="../contact-us/">CONTACT</a></nav>
+<body class="ed">
+<div class="nav-scrim"></div>
+<aside class="sidebar" aria-label="Site navigation">
+  <div class="sidebar__top">
+    <a class="sidebar__logo" href="../" aria-label="UChicago Effective Altruism home"><img src="../assets/images/logo.png" alt="University of Chicago Effective Altruism"></a>
+    <button class="sidebar__close" aria-label="Close menu">&times;</button>
+  </div>
+  <nav class="sidebar__nav">
+    <a href="../">Home</a>
+    <div class="sidebar__group"><span class="sidebar__label">About Us</span>
+      <a href="../about-us/">UChicago EA</a>
+      <a href="../about-ea/">Effective Altruism</a>
+    </div>
+    <div class="sidebar__group"><span class="sidebar__label">Programs</span>
+      <a href="../intro-fellowship/" class="active">Intro Fellowship</a>
+      <a href="../catalyst/">Catalyst</a>
+      <a href="../retreats/">Retreats &amp; Conferences</a>
+    </div>
+    <a href="../events/">Events</a>
+    <a href="../contact-us/">Contact</a>
+  </nav>
+</aside>
+<header class="ed-bar">
+  <div class="ed-bar__inner">
+    <a class="ed-bar__logo" href="../" aria-label="UChicago Effective Altruism home"><img src="../assets/images/logo.png" alt="University of Chicago Effective Altruism"></a>
+    <div class="ed-bar__right">
+      <a class="ed-apply" href="https://airtable.com/appvvxK5ZTEpsvC77/pag0H7hskW2ESF2M5/form" target="_blank" rel="noopener">Apply now</a>
+      <button class="ed-menu nav-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+    </div>
   </div>
 </header>
 <main>
-<section class="sec theme-black sec--medium sec--valign-center"><div class="sec__bg"><img src="../assets/images/aq21-celebration-dinner-1.jpg" alt=""><div class="sec__overlay" style="opacity:0.6"></div></div><div class="container container--medium text-center"><div class="row" style="grid-template-columns: repeat(12, 1fr)"><div class="col" style="grid-column: span 12"><div class="rich"><h2><strong>Introductory Fellowship</strong></h2></div>
-<div class="row" style="grid-template-columns: repeat(12, 1fr)"><div class="col" style="grid-column: span 6"><p class="btn-wrap "><a class="btn" href="https://lists.uchicago.edu/web/info/uceffectivealtruism">Get notified when applications reopen</a></p></div><div class="col" style="grid-column: span 6"><p class="btn-wrap "><a class="btn" href="https://docs.google.com/document/d/1iI0b7cVFoifmH7uzGFi4QFLc64NwxXu2AXiSpbg2wmQ/edit?usp=sharing" target="_blank" rel="noopener">View the syllabus</a></p></div></div></div></div></div></section>
-<section class="sec theme-white-bold sec--valign-center"><div class="container"><div class="row" style="grid-template-columns: repeat(12, 1fr)"><div class="col" style="grid-column: span 12"><div class="rich"><h2>Learn how to do good, better.</h2><p>Are you interested in having a large social impact? Do you believe we should be more thoughtful about how we allocate the world’s resources to do good? Want to meet a community of UChicago students dedicated to making the world a better place through their careers and lives?</p><p>Sign up for UChicago EA’s Introductory Fellowship! Our six-week program explores the core ideas and concepts within the Effective Altruism movement. Fellows will gain a framework for figuring out how you can make a difference in the world. Our next round of the intro fellowship will run Fall of 2025.</p><p>You can view the syllabus <a href="https://tinyurl.com/UChiEA-IFsyllabusA22">here</a>. Applications have closed for this cycle, but you can sign up to be notified when we next open applications <a href="https://airtable.com/shrA48tdnX3w7GTzj">here</a>.</p><h3>What the Fellowship Involves</h3><ul><li><p>Weekly one-hour discussion with your cohort</p></li><li><p>Cohorts consist of three to five fellows and one facilitator</p></li><li><p>An hour or two of materials (readings, videos, etc.) to go through each week</p></li><li><p>Exclusive programming opportunities, including eligibility for the Midwest EA Next Steps Retreat and other activities</p></li><li><p>Join a local and global community of people committed to finding and enacting effective approaches to impact!</p></li></ul></div></div></div></div></section>
+<section class="ed-page-hero"><div class="wrap"><p class="ed-eyebrow">Programs</p><h1>The Intro <em>Fellowship.</em></h1><p class="ed-hero__lede">Our flagship program — running as an accelerated three-week virtual cohort this September.</p><div class="ed-cta-row"><a class="ed-btn" href="https://airtable.com/appvvxK5ZTEpsvC77/pag0H7hskW2ESF2M5/form" target="_blank" rel="noopener">Apply now — deadline August 25</a><a class="ed-link" href="https://docs.google.com/document/d/1iI0b7cVFoifmH7uzGFi4QFLc64NwxXu2AXiSpbg2wmQ/edit?usp=sharing" target="_blank" rel="noopener">View the syllabus &rarr;</a></div></div></section>
+<section class="sec theme-white-bold sec--valign-center"><div class="container container--medium"><div class="rich"><h2>Learn how to do good, better.</h2><p>Want to have a bigger impact with your career, your donations, and your time — and meet a community of UChicago students who care about the same thing? The Intro Fellowship is the best place to start.</p><p>We run the fellowship every quarter as a guided tour of the core ideas of effective altruism: how to compare problems, how to weigh evidence, and how to actually make a difference with the resources you have. <strong>This September, we're running an accelerated version — fully virtual, three weeks, September 1–18</strong> — so you can dive in before the school year picks up. No prior background needed.</p></div></div></section>
+<section class="sec theme-cream"><div class="container container--medium"><div class="rich"><p class="eyebrow">The experience</p><h3>What the fellowship involves</h3><ul><li><p>Twice-weekly, hour-long small-group discussions (online) with fellow UChicago students about using evidence and reason to help others as effectively as possible</p></li><li><p>New lenses on the world drawn from economics, philosophy, applied rationality, and evidence-based science</p></li><li><p>Career resources, curated reading lists, and videos on the issues that matter most</p></li><li><p>Opportunities to meet professionals working in AI safety, biosecurity, animal welfare, global health and development, and effective philanthropy</p></li><li><p>Eligibility for exclusive programming like the Midwest EA Retreat — and membership in a local and global community of people committed to doing good well</p></li></ul></div></div></section>
+<section class="sec theme-white-bold"><div class="container container--medium"><div class="rich"><p class="eyebrow">Applications</p><h3>How to apply</h3><p>Applications are <a href="https://airtable.com/appvvxK5ZTEpsvC77/pag0H7hskW2ESF2M5/form" target="_blank" rel="noopener">open now</a> and reviewed on a rolling basis, with a final deadline of <strong>Friday, August 25</strong>.</p><p>Curious but not ready to commit? Come to a virtual info session — <strong>August 16 at 1:00 pm CDT</strong> or <strong>August 19 at 7:00 pm CDT</strong> — and we'll tell you all about the program and the club (<a href="https://airtable.com/appBBzqAzcApg1KJx/pag2mqwJm0NmBfgSy/form" target="_blank" rel="noopener">RSVP here</a> for the meeting link).</p><p>Can't make it this September? We'll run the fellowship again next quarter — <a href="https://airtable.com/shrA48tdnX3w7GTzj" target="_blank" rel="noopener">leave your info here</a> and we'll reach out when applications open.</p></div>
+<div class="btn-row" style="justify-content:flex-start"><a class="btn" href="https://airtable.com/appvvxK5ZTEpsvC77/pag0H7hskW2ESF2M5/form" target="_blank" rel="noopener">Apply now</a><a class="btn btn--ghost" href="https://airtable.com/appBBzqAzcApg1KJx/pag2mqwJm0NmBfgSy/form" target="_blank" rel="noopener">RSVP to an info session</a></div></div></section>
 </main>
-<footer class="site-footer">
-  <div class="sec theme-dark">
-    <div class="container">
-      <div class="row row--center">
-        <div class="col" style="grid-column: span 5">
-          <div class="rich">
-            <h4>Join our <a href="https://lists.uchicago.edu/web/info/uceffectivealtruism">email listserv</a> and add our <a href="https://tinyurl.com/UChiEA-cal">Google Calendar</a></h4>
-            <p class="footnote"><em>These are the best ways to receive updates on our opportunities, discuss ideas, and start getting involved!</em></p>
-          </div>
-        </div>
-        <div class="col col--spacer-only" style="grid-column: span 2"></div>
-        <div class="col site-footer__contact" style="grid-column: span 5">
-          <div class="rich">
-            <h3>Contact us</h3>
-            <p>Email <a href="mailto:ea.uchicago@gmail.com">ea.uchicago@gmail.com</a> or<br>connect with us on <a href="https://uchicago-ea.slack.com/join/shared_invite/zt-vnp07uq8-zHu8N4hCVEWGdpr_CpUCvg#/shared-invite/email">Slack</a> and <a href="https://www.instagram.com/uchicago.ea/">Instagram</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="site-footer__credit rich">
-        <em>Supported by the <a href="https://centreforeffectivealtruism.org">Centre for Effective Altruism</a></em>
-      </div>
-    </div>
+<footer class="ed-foot"><div class="wrap"><div class="ed-foot__inner">
+  <div class="ed-foot__links">
+    <a href="mailto:ea.uchicago@gmail.com">Email</a>
+    <a href="https://uchicago-ea.slack.com/join/shared_invite/zt-vnp07uq8-zHu8N4hCVEWGdpr_CpUCvg#/shared-invite/email">Slack</a>
+    <a href="https://www.instagram.com/uchicago.ea/">Instagram</a>
+    <a href="https://calendar.google.com/calendar/u/0?cid=NmY4NWY5YjRlNTg4NzBhZWIxY2YxYzljMjU5ZjdiNGJkMDYzZjUxMjM1ZDgxZjc1OTcyZWYyMTUxYWE1MjhiN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">Google Calendar</a>
   </div>
-</footer>
+  <p class="ed-foot__credit">Supported by the Centre for Effective Altruism</p>
+</div></div></footer>
 <script src="../js/main.js"></script>
 </body>
 </html>
