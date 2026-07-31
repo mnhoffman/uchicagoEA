@@ -1007,8 +1007,16 @@ body.ed {
 .ed .theme-bright .ed-item { border-color: hsla(0, 0%, 100%, 0.9); }
 .ed .theme-bright .ed-item__num { color: var(--accent-light); }
 .ed .theme-bright .ed-item h3 { color: var(--white); }
+.ed .theme-bright .ed-item p { color: hsla(0, 0%, 100%, 0.92); }
 .ed .theme-bright .ed-dots li { color: hsla(0, 0%, 100%, 0.93); }
 .ed .theme-bright .ed-dots li::before { background: var(--accent-light); }
+.ed .theme-bright h2 { color: var(--white); }
+.ed .theme-bright h2 em { color: var(--accent-light); }
+.ed .theme-bright .ed-link { color: var(--white); border-color: hsla(0, 0%, 100%, 0.5); }
+.ed .theme-bright .ed-link:hover { color: var(--accent-light); border-color: var(--accent-light); }
+
+/* hairline divider */
+.ed-rule { border: 0; border-top: 1px solid hsla(200, 30%, 14%, 0.14); margin: 0; }
 
 /* --- get involved --- */
 .ed-involved { padding: clamp(3.5rem, 7vw, 6rem) 0; text-align: center; }
