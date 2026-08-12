@@ -545,7 +545,8 @@ body.nav-open .sidebar { transform: none; }
   .row > .col { grid-column: 1 / -1 !important; }
   .col--spacer-only { display: none; }
 
-  .cards, .carousel__track { grid-template-columns: 1fr; grid-auto-columns: 85%; }
+  .cards { grid-template-columns: 1fr; }
+  .carousel__track { grid-template-columns: none; grid-auto-columns: 85%; }
   .cards { gap: 3em; }
 
   .carousel__arrow--prev { left: 4px; }
