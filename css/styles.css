@@ -1161,3 +1161,46 @@ body.ed {
   .ed-wave--desktop { display: none; }
   .ed-wave--mobile { display: block; }
 }
+
+/* --- what-we-do cards on teal --- */
+.ed-wcard {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 2.1rem 1.9rem;
+  box-shadow: 0 10px 30px hsla(199, 55%, 12%, 0.18);
+}
+
+.ed-wcard__squiggle { display: block; width: 96px; height: 16px; margin: 0 0 1.1rem; }
+
+.ed .theme-bright .ed-wcard h3 { color: var(--ink); font-size: 1.45rem; margin: 0 0 0.6rem; }
+.ed .theme-bright .ed-wcard p { color: var(--ink-soft); font-size: 0.98rem; margin: 0 0 1rem; }
+.ed .theme-bright .ed-wcard .ed-link { color: var(--ink); border-color: hsla(189, 82%, 31%, 0.35); font-size: 0.92rem; }
+.ed .theme-bright .ed-wcard .ed-link:hover { color: var(--accent); border-color: var(--accent); }
+
+/* --- at-a-glance band --- */
+.ed-glance { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(1rem, 2.5vw, 2rem); }
+
+.ed-glance__label {
+  font-family: var(--sans);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-light);
+  margin: 0 0 0.25rem;
+}
+
+.ed-glance__value { font-family: var(--serif); font-size: clamp(1.1rem, 1.8vw, 1.4rem); color: var(--white); margin: 0; }
+
+@media (max-width: 820px) {
+  .ed-glance { grid-template-columns: 1fr 1fr; }
+}
+
+/* a white callout inside a teal section keeps normal text colors */
+.ed .theme-bright .callout {
+  --heading: var(--ink);
+  --text: var(--ink-soft);
+  --link: var(--ink);
+  --btn-bg: var(--accent);
+  --btn-text: var(--white);
+}
