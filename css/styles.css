@@ -1204,3 +1204,6 @@ body.ed {
   --btn-bg: var(--accent);
   --btn-text: var(--white);
 }
+
+/* open squiggle columns on teal (no card) */
+.ed-item--squig { border-top: 0; padding-top: 0; }
