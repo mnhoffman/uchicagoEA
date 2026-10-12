@@ -42,3 +42,12 @@ assets/favicon.ico
   YouTube video as the original.
 - Pages are plain hand-editable HTML — edit content directly in each
   `index.html`.
+
+## Dormant links (not published on the site)
+
+Removed from the site because the club does not actively check them;
+kept here in case they come back:
+
+- Slack invite: https://uchicago-ea.slack.com/join/shared_invite/zt-vnp07uq8-zHu8N4hCVEWGdpr_CpUCvg#/shared-invite/email
+- Instagram: https://www.instagram.com/uchicago.ea/
+- Old Airtable contact form (was embedded on the contact page): https://airtable.com/embed/shrmD16AfIWEnvJln
