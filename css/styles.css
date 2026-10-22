@@ -1207,3 +1207,8 @@ body.ed {
 
 /* open squiggle columns on teal (no card) */
 .ed-item--squig { border-top: 0; padding-top: 0; }
+
+/* light at-a-glance row (ruled columns on cream) */
+.ed-glance--light > div { border-top: 2px solid var(--ink); padding-top: 0.9rem; }
+.ed-glance--light .ed-glance__label { color: var(--accent); }
+.ed-glance--light .ed-glance__value { color: var(--ink); }
