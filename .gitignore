@@ -1,3 +1,4 @@
 .context/
 .playwright-mcp/
 .DS_Store
+board-src/

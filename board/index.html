@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Board | UChicago Effective Altruism</title>
+<link rel="icon" href="../assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css?v=9">
+</head>
+<body class="ed">
+<header class="ed-bar">
+  <div class="ed-bar__inner">
+    <a class="ed-bar__logo" href="../" aria-label="UChicago Effective Altruism home"><img src="../assets/images/logo.png" alt="University of Chicago Effective Altruism"></a>
+  </div>
+</header>
+<main id="board-main">
+<section class="sec theme-cream sec--medium"><div class="container container--medium"><div class="rich" style="max-width:420px">
+<p class="ed-eyebrow">Board only</p>
+<h2>This page is <em>locked.</em></h2>
+<p>Enter the board password to continue.</p>
+<form id="gate" autocomplete="off">
+<input id="pw" type="password" autocomplete="current-password" placeholder="Password" style="font-family:var(--sans);font-size:1rem;padding:0.85em 1em;border:1.5px solid hsla(200,30%,14%,0.25);border-radius:10px;width:100%;background:var(--white);color:var(--ink)">
+<p id="err" hidden style="color:hsl(5,65%,45%);font-size:0.92rem;margin-top:0.6rem">That password didn't work. Try again.</p>
+<button class="btn" type="submit" style="margin-top:1rem;border:0;cursor:pointer">Unlock</button>
+</form>
+</div></div></section>
+</main>
+<script>
+const SALT = "AEzqaEgjhdWkqcnygSAyrg==", IV = "hjz5TmRXkoMleY+S", CT = "yEAS4X6k+lXq8twRvVKU4MHAhY4VX7Di4XN6CQzKm4HgtKyDcIdAwtBv+KdSQz40QHsWvRucMtpoYe3B4IbUQgUI0qe/mtwreGi++weUSzreTbwZVJAQRgEKB8cS3DAJmva5UrnG8RPVKfSBGmTHI5GoYDMNggVbsA8dmkzvX2dcO+hwKvipRnDtlMqGZQIT0HH449Vx0Du2bz5Xd2jJ/SCXqNariTIeIXPvnbt20dMLPIhjBPNqSIrq+kN2GCAG5n1ZO0lgF9UC3mnLM5G+1J16CVWGgOF8chl5reYqi4CoJ3f7sE1qIv9sqxT4eDcIO19Yv7SYMESUpyGEvRx1CoLR0jRQ7UOBQBVzhjUy65W/FMaUUR/bZ6bH131Ki3KnGQjCDL5SSFKEHdRRTia7349WCSA85q+XRFhtbZCyGre6GeTQk57R4m/mCnzhyJtrqKc+1vrOWPM3gyeN4za6kCV5lmQq4FzvaoJv5FPf69XWg2zrhdakcXWhmn6KF+BCxWqMBZXGiptno85bPW9EfFr6CeKnkU9ET7UCv3exalfP4zeFXyZjRzpxMDqp+Xn0Dza7HctCbmSCfEJ6GyNt6Xpl+NULHp4uGFz424o7nQCQ8tNIZ2ZnAHvdgROnxTuLI57qzeIW7JS1IDV8AdSvuOkhAwY5uKTx4abZpuM2QSuHyqIObNE0g7b1BnULaLAcLQwaCZ02vmFpROn+OA3zXNNoqWOppioHqAYBG9fYEHe7uu5GvYKOGLSKhLLLjPsO8rlvoFqGgJxH5G24P3MrVnrJ1gsNQ89qsPx+nZxzQNSsB1hzWkITypwydrnleCg82R7Oi0z/qWJd1fZgt8FN4Ot0PsC+b/w0+s2d5lQ/J7OhIEM6FKBVFCyq+1QvBCU7AfyNyJxe/DYFlIhW9wwsfq4avGYzAvJ+zQ3vuCSNG9Q7bISxKBvfNcW29WLCR+s12fc2zdbfPyYSrRF9JQF1ThW668RP0JLIVoCN/LGyuEYc72FO5JKFp18Nkz4qmDwlAI6GVelKt4kfUQlOudaNMiAmzyHknxLuzV4E0PyDIHa0z28JfP5Kgi3Nc38v06jmMM507nrW2yrFg8LhWLuqLqAfiaTLzh7sCpnIBsbeDGycEu+GqKop9t1ponaj+l6AdoF74WE7Zcocj4kBi2aut7bZjAnpy2+Be134Dfscc7FwqiIUPO8YxSwEU8MTNt4Jbqco9TYSIy2ZydO/qrduAUKRBAKCfhBWZmU8WCfWBGtfRl1eSG7z0u1vXkrIyI1U3wfQa7hleVkVrJG655psyvupjh5K9a1z8J3ZY1V2h6bnpc1dbqajq4m7Xeh/uuosPpUnNdkzgyub/ocxhFZhbS6kVnfZ3wMo31fgeudFZXHsJ4f1RFHOLAZQLDQJ98E0HmkEWlc8hJa+a+7bTiKTd1whRaD0re4koymxAPIEmkO/JILzQ4FUBGn/v0XzHgereqXsO85aCQ==";
+const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+async function tryUnlock(pw) {
+  const km = await crypto.subtle.importKey("raw", new TextEncoder().encode(pw), "PBKDF2", false, ["deriveKey"]);
+  const key = await crypto.subtle.deriveKey(
+    { name: "PBKDF2", salt: b64(SALT), iterations: 600000, hash: "SHA-256" },
+    km, { name: "AES-GCM", length: 256 }, false, ["decrypt"]);
+  const pt = await crypto.subtle.decrypt({ name: "AES-GCM", iv: b64(IV) }, key, b64(CT));
+  document.getElementById("board-main").innerHTML = new TextDecoder().decode(pt);
+  try { sessionStorage.setItem("uceaBoardPw", pw); } catch (e) {}
+}
+document.getElementById("gate").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  try { await tryUnlock(document.getElementById("pw").value); }
+  catch (err) { document.getElementById("err").hidden = false; }
+});
+try {
+  const saved = sessionStorage.getItem("uceaBoardPw");
+  if (saved) tryUnlock(saved).catch(() => {});
+} catch (e) {}
+</script>
+</body>
+</html>

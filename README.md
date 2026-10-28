@@ -51,3 +51,21 @@ kept here in case they come back:
 - Slack invite: https://uchicago-ea.slack.com/join/shared_invite/zt-vnp07uq8-zHu8N4hCVEWGdpr_CpUCvg#/shared-invite/email
 - Instagram: https://www.instagram.com/uchicago.ea/
 - Old Airtable contact form (was embedded on the contact page): https://airtable.com/embed/shrmD16AfIWEnvJln
+
+## Board page (uchicagoea.org/board/)
+
+A password-protected page for board members. The published file
+(`board/index.html`) contains only AES-256-GCM-encrypted content; it is
+unlocked in the browser with the shared board password. The page is not
+linked from the site, not in the sitemap, and marked noindex.
+
+- The plaintext source lives in `board-src/board.html` (gitignored, local
+  only). The current content can always be recovered by unlocking the
+  live page in a browser.
+- To edit the page: update `board-src/board.html`, then run
+  `python3 tools/encrypt_board_page.py` (it prompts for the password)
+  and commit the regenerated `board/index.html`.
+- To change the password: run the same script with the new password.
+  Anyone with the old password can still read OLD versions from git
+  history, so rotate after removing someone's access and don't treat
+  the page as a vault; it is for links and low-stakes notes.
