@@ -61,7 +61,13 @@ async function tryUnlock(pw) {
     { name: "PBKDF2", salt: b64(SALT), iterations: __ITER__, hash: "SHA-256" },
     km, { name: "AES-GCM", length: 256 }, false, ["decrypt"]);
   const pt = await crypto.subtle.decrypt({ name: "AES-GCM", iv: b64(IV) }, key, b64(CT));
-  document.getElementById("board-main").innerHTML = new TextDecoder().decode(pt);
+  const main = document.getElementById("board-main");
+  main.innerHTML = new TextDecoder().decode(pt);
+  main.querySelectorAll("script").forEach(s => {
+    const n = document.createElement("script");
+    n.textContent = s.textContent;
+    s.replaceWith(n);
+  });
   try { sessionStorage.setItem("uceaBoardPw", pw); } catch (e) {}
 }
 document.getElementById("gate").addEventListener("submit", async (e) => {
@@ -91,21 +97,25 @@ def main():
     if len(password) < 8:
         raise SystemExit("Password must be at least 8 characters.")
 
-    plaintext = (ROOT / "board-src" / "board.html").read_bytes()
-    salt, iv = os.urandom(16), os.urandom(12)
-    kdf = PBKDF2HMAC(algorithm=hashes.SHA256(), length=32, salt=salt, iterations=ITERATIONS)
-    key = kdf.derive(password.encode())
-    ct = AESGCM(key).encrypt(iv, plaintext, None)
+    for src, outdir in [("board.html", "board"), ("edit.html", "edit")]:
+        src_path = ROOT / "board-src" / src
+        if not src_path.exists():
+            continue
+        plaintext = src_path.read_bytes()
+        salt, iv = os.urandom(16), os.urandom(12)
+        kdf = PBKDF2HMAC(algorithm=hashes.SHA256(), length=32, salt=salt, iterations=ITERATIONS)
+        key = kdf.derive(password.encode())
+        ct = AESGCM(key).encrypt(iv, plaintext, None)
 
-    page = (TEMPLATE
-            .replace("__SALT__", base64.b64encode(salt).decode())
-            .replace("__IV__", base64.b64encode(iv).decode())
-            .replace("__CT__", base64.b64encode(ct).decode())
-            .replace("__ITER__", str(ITERATIONS)))
-    out = ROOT / "board" / "index.html"
-    out.parent.mkdir(exist_ok=True)
-    out.write_text(page)
-    print(f"wrote {out} ({len(ct)} bytes of ciphertext)")
+        page = (TEMPLATE
+                .replace("__SALT__", base64.b64encode(salt).decode())
+                .replace("__IV__", base64.b64encode(iv).decode())
+                .replace("__CT__", base64.b64encode(ct).decode())
+                .replace("__ITER__", str(ITERATIONS)))
+        out = ROOT / outdir / "index.html"
+        out.parent.mkdir(exist_ok=True)
+        out.write_text(page)
+        print(f"wrote {out} ({len(ct)} bytes of ciphertext)")
 
 
 if __name__ == "__main__":

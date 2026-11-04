@@ -52,6 +52,16 @@ kept here in case they come back:
 - Instagram: https://www.instagram.com/uchicago.ea/
 - Old Airtable contact form (was embedded on the contact page): https://airtable.com/embed/shrmD16AfIWEnvJln
 
+## Website editor (uchicagoea.org/edit/)
+
+A board-only, in-browser editor for quick text edits. Behind the same
+password gate as the board page; publishing additionally requires each
+editor's own GitHub personal access token (classic, repo scope) for an
+account with collaborator access, stored only in their browser. Saves
+commit straight to main, which deploys the site. Source lives in
+`board-src/edit.html` (gitignored) and is encrypted by the same script
+as the board page.
+
 ## Board page (uchicagoea.org/board/)
 
 A password-protected page for board members. The published file
